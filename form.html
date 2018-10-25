@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form page</title>
+	<style type="text/css">
+		body {
+    		background-color: whitesmoke;
+    	}
+		form {
+    		background-color: white;
+    		margin-left: 300px;
+    		margin-right: 300px;
+    		margin-top: 50px;
+    		box-shadow: 0px 5px 10px rgba(0.2, 0.2, 0.2, 0.1);
+    		margin-bottom: 100px;
+    		padding: 50px;
+    	}
+    	h3 {
+    		font-size: 30px;
+    		text-align: center;
+    		font-weight: bold;
+    		padding-top: 10px;
+    	}
+    	input {
+    		width: 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            margin-left: 50px;
+            color: dimgray;
+    	}
+    	label{
+    		font-weight: bold;	
+    	}
+    	button {
+    		padding: 15px 35px 15px 35px;
+			color: white;
+			background-color: black;
+			border: none;
+			border-radius: 20px;
+			margin-top: 20px;
+			font-size: 15px;
+			font-weight: bold;
+			margin-left: 270px;
+		}
+	</style>
+</head>
+<body>
+	<form action="form.php" method="post">
+		<h3>Create an Account</h3>
+		<div class="formcontent">
+			<label for="email">First Name</label>
+			<input type="text" name="firstname" placeholder="Enter first name">
+			<br>
+			<label for="name">Last Name </label>
+			<input type="text" name="lastname" placeholder="Enter last name">
+			<br>
+			<label for="email">Email</label>
+			<input type="email" name="email" placeholder="Eg. xyz@abc.com">
+			<br>
+			<label for="password">password</label>
+			<input type="password" name="password" placeholder="Enter password">
+			<br>
+			<label for="confirmpwd">Confirm Password</label>
+			<input type="password" name="password" placeholder="Confirm password">
+			<br>
+			<label for="phonenumber">Phone Number</label>
+			<input type="tel" name="phonenumber" placeholder="Eg. +234 8123456789">
+			<br>
+			<label for="country">Country</label>
+			<input type="text" name="country" placeholder="Enter country E.g Nigeria">
+			<br>
+			<div style="display: flex;">
+				<label>Gender</label> 
+				<input type="radio" name="gender" value="male">
+				<label for="male">Male</label>
+				<br>
+				<input type="radio" name="gender" value="female">
+				<label for="female">Female</label>
+			</div>
+		</div>
+		<button name="submit">Sign Up</button>
+	</form>
+</body>
+</html>
